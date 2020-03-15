@@ -8,11 +8,8 @@
     <script src="jquery.js"></script>
     <script>
     $(document).ready(function() {
-        $("#hide").click(function() {
-            $("p").hide(1000);
-        });
-        $("#show").click(function() {
-            $("p").show();
+        $("button").click(function() {
+            $("p").toggle(1000);
         });
     });
     </script>
@@ -21,8 +18,8 @@
  
 <p>If you click on the "Hide" button, I will disappear.</p>
 
-<button id="hide">Hide</button>
-<button id="show">Show</button>
+<button>Hide</button>
+
     
 </body>
 </html>
